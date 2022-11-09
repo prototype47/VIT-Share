@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".uploadImage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:id="@+id/addTask"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="13dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circle_blue"
+                    android:src="@drawable/ic_pdf"
+                    android:padding="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Select PDF"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No File Selected : /"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/comfortaa"
+            android:id="@+id/dynamicText"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pdfName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa"
+                android:hint="Enter PDF Title" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pdf_category"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:layout_marginVertical="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="Ready for Upload"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:cornerRadius="15dp"
+            android:id="@+id/pdfBtn" />
+
+    </LinearLayout>
+</ScrollView>

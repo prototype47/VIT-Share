@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/newsfeed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee_inline"
+                android:text="Student - Faculty Nutshell"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="18.4sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteNoticeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="Delete Notice"
+            android:textColor="@color/red2"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:letterSpacing="0.09"
+            app:cornerRadius="15dp"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/red2"/>
+
+        <TextView
+            android:id="@+id/deleteNoticeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Notice Title"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/textColor" />
+
+        <ImageView
+            android:id="@+id/deleteNoticeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/lightGray"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

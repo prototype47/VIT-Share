@@ -17,6 +17,17 @@
         android:theme="@style/Theme.AdVIT"
         tools:targetApi="31">
         <activity
+            android:name=".submissions.tasksViewer"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".submissions.MainTaskActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".developersPage"
+            android:exported="false" />
+        <activity
             android:name=".UploadTaskActivity"
             android:exported="false" />
         <activity

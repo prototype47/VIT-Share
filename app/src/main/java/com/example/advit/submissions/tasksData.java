@@ -2,22 +2,14 @@ package com.example.advit.submissions;
 
 public class tasksData {
 
-    private String pdfName, pdfTitle;
+    private String pdfTitle, pdfUrl;
 
     public tasksData() {
     }
 
-    public tasksData(String pdfName, String pdfTitle) {
-        this.pdfName = pdfName;
+    public tasksData(String pdfTitle, String pdfUrl) {
         this.pdfTitle = pdfTitle;
-    }
-
-    public String getPdfName() {
-        return pdfName;
-    }
-
-    public void setPdfName(String pdfName) {
-        this.pdfName = pdfName;
+        this.pdfUrl = pdfUrl;
     }
 
     public String getPdfTitle() {
@@ -26,5 +18,13 @@ public class tasksData {
 
     public void setPdfTitle(String pdfTitle) {
         this.pdfTitle = pdfTitle;
+    }
+
+    public String getPdfUrl() {
+        return pdfUrl;
+    }
+
+    public void setPdfUrl(String pdfUrl) {
+        this.pdfUrl = pdfUrl;
     }
 }

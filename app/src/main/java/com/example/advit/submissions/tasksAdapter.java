@@ -37,12 +37,12 @@ public class tasksAdapter extends RecyclerView.Adapter<tasksAdapter.tasksViewHol
     @Override
     public void onBindViewHolder(@NonNull tasksViewHolder holder, int position) {
 
-        holder.name.setText(list.get(holder.getAdapterPosition()).getPdfName());
+        holder.name.setText(list.get(holder.getAbsoluteAdapterPosition()).getPdfTitle());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, tasksViewer.class);
-                intent.putExtra("pdfTitle", list.get(holder.getAdapterPosition()).getPdfTitle());
+                intent.putExtra("pdfTitle", list.get(holder.getAbsoluteAdapterPosition()).getPdfTitle());
                 context.startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class tasksAdapter extends RecyclerView.Adapter<tasksAdapter.tasksViewHol
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(list.get(holder.getAdapterPosition()).getPdfTitle()));
+                intent.setData(Uri.parse(list.get(holder.getAbsoluteAdapterPosition()).getPdfUrl()));
                 context.startActivity(intent);
             }
         });

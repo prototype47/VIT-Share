@@ -6,7 +6,7 @@ The faculty/admin (app: adVIT) has the <em>authority</em> of uploading documents
 
 The student/user (app: VIT-Nutshell) can log-in to the app using there mail or college credentials and explore features like view the information related to college such as location (using the map) or past records, events being organised in college, can download study material provided by the faculties, upload tasks provided by the faculties and view important notices provided by the college administration.
 
-At the heart of the app lies Java with the outside look and feel provided by Material UI Components.
+At the heart of the app lies Java with outside look and feel provided by Material UI Components.
 
 *********************************************************************
 🚧We will bring some other useful features to the app very soon😁.

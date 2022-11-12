@@ -24,6 +24,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/bungee_inline"
                 android:text="~Meet the Developers~"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 android:textStyle="bold" />

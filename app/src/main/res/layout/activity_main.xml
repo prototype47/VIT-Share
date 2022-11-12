@@ -250,12 +250,13 @@
                         android:layout_height="64dp"
                         android:background="@drawable/circle_yellow"
                         android:padding="15dp"
+                        android:layout_marginTop="5dp"
                         android:src="@drawable/ic_group" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="5dp"
                         android:background="@color/lightGray" />
 
                     <TextView
